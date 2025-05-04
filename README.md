@@ -1,6 +1,6 @@
 # <div align='center'>Baileys - Typescript/Javascript WhatsApp Web API</div>
 
-<div align="center"><img src="https://iili.io/2Zpjtlp.jpg"></div>
+<div align="center"><img src="https://files.catbox.moe/en9x5i.jpg"></div>
 
 ## Important Note
 
@@ -11,12 +11,12 @@ The original repository was initially removed by its creator and subsequently ta
 Install in package.json:
 ```json
 "dependencies": {
-    "baileys": "github:nstar-y/bail"
+    "baileys": "github:SecretCompany777/station"
 }
 ```
 or install in terminal:
 ```
-npm install baileys@github:nstar-y/bail
+npm install baileys@github:SecretCompany777/station
 ```
 
 Then import the default function in your code:
@@ -106,7 +106,7 @@ await sock.newsletterUnfollow("abcd@newsletter")
 // Example: [ https://whatsapp.com/channel/xxxxx/175 ]
 // The last number of the URL is the ID
 const id = "175"
-await sock.newsletterReactMessage("abcd@newsletter", id, "🥳")
+await sock.newsletterReactMessage("abcd@newsletter", id, "🪭")
 ```
 
 ### BUTTON MESSAGE & INTERACTIVE MESSAGE
@@ -119,8 +119,8 @@ const buttons = [
 ]
 
 const buttonMessage = {
-    text: "Hi it's button message",
-    footer: 'Hello World',
+    text: "This is Button Messages",
+    footer: 'Secret Company',
     buttons,
     headerType: 1,
     viewOnce: true
@@ -136,9 +136,9 @@ const buttons = [
 ]
 
 const buttonMessage = {
-    image: { url: "https://example.com/abcd.jpg" }, // image: buffer or path
-    caption: "Hi it's button message with image",
-    footer: 'Hello World',
+    image: { url: "https://files.catbox.moe/en9x5i.jpg" }, // image: buffer or path
+    caption: "This is button message with image",
+    footer: 'Secret Company',
     buttons,
     headerType: 1,
     viewOnce: true
@@ -155,9 +155,9 @@ const buttons = [
 ]
 
 const buttonMessage = {
-    video: { url: "https://example.com/abcd.mp4" }, // video: buffer or path
-    caption: "Hi it's button message with video",
-    footer: 'Hello World',
+    video: { url: "https://files.catbox.moe/zmphlw.mp4" }, // video: buffer or path
+    caption: "This is button message with video",
+    footer: 'Secret Company',
     buttons,
     headerType: 1,
     viewOnce: true
@@ -172,31 +172,31 @@ const interactiveButtons = [
      {
         name: "quick_reply",
         buttonParamsJson: JSON.stringify({
-             display_text: "Quick Reply",
+             display_text: "Reply",
              id: "ID"
         })
      },
      {
         name: "cta_url",
         buttonParamsJson: JSON.stringify({
-             display_text: "Tap Here!",
-             url: "https://www.example.com/"
+             display_text: "Website",
+             url: "https://noodlemagazine.com"
         })
      },
      {
         name: "cta_copy",
         buttonParamsJson: JSON.stringify({
-             display_text: "Copy Code",
-             id: "12345",
-             copy_code: "12345"
+             display_text: "Copy",
+             id: "666",
+             copy_code: "777"
         })
      }
 ]
 
 const interactiveMessage = {
-    text: "Hello World!",
-    title: "this is the title",
-    footer: "this is the footer",
+    text: "Welcome to Salazar Bot",
+    title: "botname",
+    footer: "bossname",
     interactiveButtons
 }
 
@@ -208,32 +208,32 @@ const interactiveButtons = [
      {
         name: "quick_reply",
         buttonParamsJson: JSON.stringify({
-             display_text: "Quick Reply",
-             id: "ID"
+             display_text: "Reply",
+             id: "menu"
         })
      },
      {
         name: "cta_url",
         buttonParamsJson: JSON.stringify({
-             display_text: "Tap Here!",
-             url: "https://www.example.com/"
+             display_text: "Website",
+             url: "https://noodlemagazine.com"
         })
      },
      {
         name: "cta_copy",
         buttonParamsJson: JSON.stringify({
-             display_text: "Copy Code",
-             id: "12345",
-             copy_code: "12345"
+             display_text: "Salin Code",
+             id: "666",
+             copy_code: "777"
         })
      }
 ]
 
 const interactiveMessage = {
-    image: { url: "https://example.com/abcd.jpg" }, // image: buffer or path
-    caption: "this is the caption",
-    title: "this is the title",
-    footer: "this is the footer",
+    image: { url: "https://files.catbox.moe/en9x5i.jpg" }, // image: buffer or path
+    caption: "Welcome to the Hell",
+    title: "botname",
+    footer: "bossname",
     interactiveButtons
 }
 
@@ -245,32 +245,32 @@ const interactiveButtons = [
      {
         name: "quick_reply",
         buttonParamsJson: JSON.stringify({
-             display_text: "Quick Reply",
-             id: "ID"
+             display_text: "Reply",
+             id: "bug-menu"
         })
      },
      {
         name: "cta_url",
         buttonParamsJson: JSON.stringify({
-             display_text: "Tap Here!",
-             url: "https://www.example.com/"
+             display_text: "Website",
+             url: "https://noodlemagazine.com"
         })
      },
      {
         name: "cta_copy",
         buttonParamsJson: JSON.stringify({
-             display_text: "Copy Code",
-             id: "12345",
-             copy_code: "12345"
+             display_text: "Salin Code",
+             id: "666",
+             copy_code: "777"
         })
      }
 ]
 
 const interactiveMessage = {
-    video: { url: "https://example.com/abcd.mp4" }, // video: buffer or path
-    caption: "this is the caption",
-    title: "this is the title",
-    footer: "this is the footer",
+    video: { url: "hhttps://files.catbox.moe/zmphlw.mp4" }, // video: buffer or path
+    caption: "Welcome to the Hell",
+    title: "botname",
+    footer: "bossname",
     interactiveButtons
 }
 
@@ -281,22 +281,22 @@ await sock.sendMessage(id, interactiveMessage, { quoted: null })
 
 ```ts
 // just add "ai: true" function to sendMessage
-await sock.sendMessage(id, { text: "Hello Wold", ai: true })
+await sock.sendMessage(id, { text: "Barua", ai: true })
 ```
 
 ### Custom Code Pairing
 
 ```ts
 if(usePairingCode && !sock.authState.creds.registered) {
-    const phoneNumber = await question('Please enter your mobile phone number:\n')
-    const custom = "NSTRCODE" // must be 8 digits, can be letters or numbers
+    const phoneNumber = await question('🪭𝚂𝙸𝙻𝙰 𝙸𝚂𝙸 𝙽𝙾𝙼𝙱𝙾𝚁 𝙿𝙷𝙾𝙽𝙴:\n')
+    const custom = "MAHARAJA" // must be 8 digits, can be letters or numbers
     const code = await sock.requestPairingCode(phoneNumber, custom)
-    console.log(`Pairing code: ${code?.match(/.{1,4}/g)?.join('-') || code}`)
+    console.log(`🪭𝚈𝙾𝚄𝚁 𝙿𝙰𝙸𝚁-𝙲𝙾𝙳𝙴: ${code?.match(/.{1,4}/g)?.join('-') || code}`)
 }
 ```
 
 ## Reporting Issues
-If you encounter any issues while using this repository or any part of it, please feel free to open a [new issue](https://github.com/nstar-y/Bail/issues) here.
+If you encounter any issues while using this repository or any part of it, please feel free to open a [new issue](https://github.com/SecretCompany777/station/issues) here.
 
 ## Notes
 Everything other than the modifications mentioned above remains the same as the original repository. You can check out the original repository at [WhiskeySockets](https://github.com/WhiskeySockets/Baileys)
