@@ -1,15 +1,15 @@
 {
-  "name": "baileys-mod",
-  "version": "6.8.4",
-  "description": "Custom Baileys WhatsApp API",
+  "name": "secret-company",
+  "version": "6.8.5",
+  "description": "Modified Baileys",
   "keywords": [
-    "baileys", "baileys-mod", "wabot", "whatsapp",
+    "baileys", "wabot", "whatsapp",
     "js-whatsapp", "whatsapp-api", "whatsapp-web", "whatsapp-bot",
-    "automation", "multi-device"
+    "automation", "multi-device", "bug-bot", "modified-baileys"
   ],
-  "homepage": "https://github.com/nstar-y/bail",
+  "homepage": "https://github.com/SecretCompany777/station",
   "repository": {
-    "url": "git+ssh://git@github.com/nstar-y/bail.git"
+    "url": "git+ssh://git@github.com/SecretCompany777/station.git"
   },
   "license": "MIT",
   "author": "Adhiraj Singh",
@@ -47,7 +47,7 @@
     "axios": "^1.6.0",
     "cache-manager": "^5.7.6",
     "libphonenumber-js": "^1.10.20",
-    "libsignal": "github:nstar-y/libsignal",
+    "libsignal": "github:SecretCompany777/signal",
     "lodash": "^4.17.21",
     "music-metadata": "^7.12.3",
     "pino": "^9.6",
@@ -82,7 +82,7 @@
     "jimp": "^0.16.1",
     "link-preview-js": "^3.0.0",
     "qrcode-terminal": "^0.12.0",
-    "sharp": "^0.34.1"
+    "sharp": "^0.34.2"
   },
   "peerDependenciesMeta": {
     "audio-decode": {
